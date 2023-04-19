@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #FFCD29;
+    height: 100px;
+    min-height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.head-logo{
+    position: relative;
+    height: 80%;
+    border-radius: 15px;
+    top: 10%;
+    left: 10px;
+}
+
+.nav1 ul{
+    display: grid;
+}
+
