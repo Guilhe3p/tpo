@@ -15,6 +15,7 @@ header{
 .head-logo{
     position: relative;
     height: 80%;
+    margin-right: 10px;
     border-radius: 15px;
     top: 10%;
     left: 10px;
@@ -27,13 +28,23 @@ nav{
 }
 
 .logs{
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.logs a{
     text-decoration: none;
     color: black;
-    margin: auto;
-    padding: 1vw;
     font-family:Arial, Helvetica, sans-serif;
-    font-size: medium;
-    border: black solid;
+    font-size: large;
+    padding: 1vh;
+    margin: auto;
+}
+.logs a:hover{
+    background-color: #D4E073;
+    border: 1px black solid;
+    border-radius: 15px;
 }
 
 .navi{
@@ -43,5 +54,8 @@ nav{
     padding: 1vw;
     font-family:Arial, Helvetica, sans-serif;
     font-size: medium;
+}
+nav  a:hover{
+    color: white;
 }
 
