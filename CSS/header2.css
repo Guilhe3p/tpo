@@ -20,7 +20,28 @@ header{
     left: 10px;
 }
 
-.nav1 ul{
-    display: grid;
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logs{
+    text-decoration: none;
+    color: black;
+    margin: auto;
+    padding: 1vw;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: medium;
+    border: black solid;
+}
+
+.navi{
+    text-decoration: none;
+    color: black;
+    margin: auto;
+    padding: 1vw;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: medium;
 }
 
