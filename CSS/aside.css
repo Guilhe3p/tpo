@@ -1,0 +1,28 @@
+aside{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 600px;
+    margin: 10px;
+    background-color: white;
+    /* border: 4px #D4E073 solid; */
+    border-radius: 4px;
+}
+
+aside article{
+    display: flex;
+    margin: 10px auto;
+    width: 95%;
+    border: 2px white solid;
+} aside article h5{margin: auto 10px;}
+aside > *{
+    color: #3F403C;
+    text-decoration: none;
+}
+
+aside article img{
+    width: 95px;
+    height: 95px;
+    padding: 4px;
+    border-radius: 10px;
+}
