@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Robotto, Arial, Helvetica, sans-serif;;
+    /* font-family: Robotto, Arial, Helvetica, sans-serif; */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body{background-color: #ECF0F1;}
 
