@@ -16,6 +16,7 @@ main > article{
     width: 80%;
     /* background-color: #D4E073; */
     margin: 20px auto;
+    margin-left: 20px;
     min-width: 350px;
 }
 
