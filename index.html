@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="CSS/header2.css">
     <link rel="shorcut icon" href="img/icono.ico">
     <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/aside.css">
+    <link rel="stylesheet" href="CSS/slider.css">
 </head>
 <body>
     <header>
@@ -25,38 +28,49 @@
         </div>
     </header>
 
+
+
+    <main>
+        <div class="mains">
+            <section class="banner">
+                <img src="img/banner.jpeg" alt="">
+            </section>
     
-    <footer>
-        <div class="footer_container">
-            <div class="footer_grid">
-                <div class="footer_item" id="footer_item_1">
-                    <p>Newsletter</p>
-                    <button name="Newsletter">Suscribirse</button>
+            <article class="tops">
+                <h4>Top nuevos del mes</h4>
+                <section><img src="img/monopoly.jpeg" alt=""><p>Votos: 3500 <br> Calificacion: () () () () ()</p></section>
+                <section><img src="img/monopoly.jpeg" alt=""><p>Votos: 3500 <br> Calificacion: () () () () ()</p></section>
+                <section><img src="img/monopoly.jpeg" alt=""><p>Votos: 3500 <br> Calificacion: () () () () ()</p></section>
+                <section><img src="img/monopoly.jpeg" alt=""><p>Votos: 3500 <br> Calificacion: () () () () ()</p></section>
+                <section><img src="img/monopoly.jpeg" alt=""><p>Votos: 3500 <br> Calificacion: () () () () ()</p></section>
+            </article>
+    
+            <article class="calesita">
+                <button id="reverti"></button>
+                <div class="slides">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
                 </div>
-                <div class="footer_item" id="footer_item_2">
-                    <a href="https://www.facebook.com/">
-                        <img src="img/Facebook2.ico" alt="Facebook icon">
-                    </a>
-                    <a href="https://www.instagram.com/">
-                        <img src="img/Instagram2.ico" alt="Instagram icon">
-                    </a>
-                    
-                    <a href="https://www.twitter.com/">
-                        <img src="img/Twitter.ico" alt="Twitter icon">
-                    </a>
-                    <a href="https://www.youtube.com.ar">
-                        <img src="img/YouTube.ico" alt="Youtube icon">
-                    </a>
-                </div>
-                <div class="footer_item" id="footer_item_3">
-                    <a href="https://policies.google.com/privacy?hl=es">
-                        Política de privacidad
-                    </a>
-                    <br>
-                    <a href="https://support.google.com/?hl=es">Ayuda</a>
-                </div>
-            </div>
+                <button id="avanti" onclick="siguienteSlide()"></button>
+            </article>
+
+
+            <article class="biblio">
+                <h1>Reseñas</h1>
+                
+            </article>
+
         </div>
-    </footer>
+
+        <aside id="novedades"></aside>
+    </main>
+
+
+
+    
+    <footer id="footer"></footer>
+
+    <script src="post.js"></script>
 </body>
 </html>
