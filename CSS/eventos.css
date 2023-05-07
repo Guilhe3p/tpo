@@ -1,61 +1,94 @@
-*{
-    box-sizing: border-box;   
-    text-decoration: none;
+* {
+  box-sizing: border-box;
+  text-decoration: none;
 }
-main{
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-}
-
-main > article{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 15px;
-    row-gap: 15px;
-    width: 80%;
-    background-color: #D4E073;
-    margin: 10px;
+main {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
 }
 
-section{
-    background-color: antiquewhite;
-    padding: 10px;
-    width: 100%;
-    overflow: hidden;
-    border: 1px black solid;
-    border-radius: 3px;
+main > article {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 15px;
+  width: 80%;
+  /* background-color: #D4E073; */
+  background-color: #0f5202;
+  margin: 10px;
+  padding: 1em; /*Linea agregada por Esteban*/
+}
+
+section {
+  /* background-color: rgb(250, 235, 215); */
+  background-color: #f1cd6b;
+  padding: 10px;
+  width: 100%;
+  overflow: hidden;
+  border: 1px black solid;
+  border-radius: 3px;
 }
 section > * {
-    color: black;
+  color: black;
 }
 
-section .cont-portada{
-    width: 100%;
-} section img{width: 100%;border-radius: 2px;}
-
-@media (max-width:1100px) {
-    main > article{
-        grid-template-columns: 1fr 1fr;
-    }
+section .cont-portada {
+  width: 100%;
+}
+section img {
+  width: 100%;
+  border-radius: 2px;
 }
 
-@media (max-width:850px) {
-    main > article{
-        grid-template-columns: 1fr;
-    }
-    section{
-        width: 80%;
-        margin: 10px auto;
-    }
+/* Animacion de los enlaces a eventos*/
+.card section:hover,
+/* :active, */
+:focus {
+  animation-name: agrandar;
+  animation-duration: 900ms;
+  animation-timing-function:ease-in-out;
+  
+}
+
+@keyframes agrandar {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/*FIN ANIMACION*/
+
+
+@media (max-width: 1100px) {
+  main > article {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 850px) {
+  main > article {
+    grid-template-columns: 1fr;
+  }
+  section {
+    width: 80%;
+    margin: 10px auto;
+  }
 }
 
 @media (max-width: 500px) {
-    main{
-        flex-direction: column;
-        align-items: center;
-    }
-    main > article{
-        width: 100%;
-    }
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+  main > article {
+    width: 100%;
+  }
 }
