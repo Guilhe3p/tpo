@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="CSS/aside.css">
     <link rel="stylesheet" href="CSS/slider.css">
+    <script src="calesita.js"></script>
 </head>
 <body>
     <header>
@@ -45,21 +46,21 @@
                 <section><img src="img/monopoly.jpeg" alt=""><p>Votos: 3500 <br> Calificacion: () () () () ()</p></section>
             </article>
     
-            <article class="calesita">
-                <button id="reverti"></button>
-                <div class="slides">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+            <div class="contenedor-calesita">
+                <i class="calesita-izquierda" onclick="moverIzquierda()"><</i>
+                <div class="calesita">
+                    <img src="img/img1.jpg" alt="" class="imgcal"><!--  
+                --><img src="img/img2.jpg" alt="" class="imgcal"><!-- 
+                --><img src="img/img3.jpg" alt="" class="imgcal"><!-- 
+                --><img src="img/img4.jpg" alt="" class="imgcal"><!-- 
+                --><img src="img/img5.jpg" alt="" class="imgcal"><!-- 
+                --><img src="img/img6.jpg" alt="" class="imgcal">
                 </div>
-                <button id="avanti" onclick="siguienteSlide()"></button>
-            </article>
+                <i class="calesita-derecha" onclick="moverDerecha()">></i>
+            </div>
 
 
-            <article class="biblio">
-                <h1>Reseñas</h1>
-                
-            </article>
+            
 
         </div>
 

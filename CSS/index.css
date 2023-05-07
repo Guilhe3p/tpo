@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;   
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+main > .mains{
+    display: grid;
+    overflow: scroll;
+    grid-template-columns: 75% 25%;
+    column-gap: 10px;
+    background-color: #D9DCC4;
+    width: 90%;
+    justify-content: space-around;
+    margin: 10px 10px;
+} main > .mains section h1{font-size:xx-large;color: white;}
+
+.mains > .banner > img{
+    width: 100%;
+    border-radius: 3px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.mains > .tops{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    align-items: center;
+    grid-column: 2/3;
+    grid-row: 1 / 20;
+} 
+.mains > .tops > section{
+    display: flex;
+    width: 90%;
+    background-color: white;
+} .mains > .tops > section > img{    width: 95px; height: 95px;padding: 4px; border-radius: 10px;}
+
+
+
+/* CARRUSEL */
+.contenedor-calesita{
+    height: 150px;
+}
+
+.contenedor-calesita .calesita{
+    /* display: inline-flex; */
+    white-space: nowrap;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.calesita img{
+    width: calc(100% / 3);
+    object-fit: cover;
+}
+
+.contenedor-calesita i{
+    display: inline-block;
+    position: relative;
+    font-size: small;
+    background-color: aliceblue;
+    text-align: center;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    line-height: 30px;
+    /* margin: auto 50px; */
+}
+
+@media (max-width:800px) {
+    .calesita img{
+        width: 50%;
+    }
+}
+
+@media (max-width:800px) {
+    .calesita img{
+        width: 100%;
+    }
+}
+

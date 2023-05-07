@@ -60,7 +60,26 @@ var asideBody = `
 
 document.getElementById("footer").innerHTML = footerBody
 document.getElementById("novedades").innerHTML = asideBody
-
-
+ 
 
 //SlideHow
+calesita = document.querySelector(".calesita")
+imagenes = document.getElementsByClassName("imgcal")
+var cont = document.querySelector(".contenedor-calesita")
+var contadorImagen = 0
+
+function moverIzquierda(){
+    if (calesita.scrollLeft == 0){
+        contadorImagen = 3
+        calesita.scrollLeft = calesita.clientWidth
+    } else{calesita.scrollLeft -= imagenes[contadorImagen].clientWidth;contadorImagen-=1}
+    console.log(contadorImagen)
+}
+
+function moverDerecha(){
+    if (calesita.scrollLeft > cont.clientWidth){
+        contadorImagen = 0
+        calesita.scrollLeft = 0
+    }else{calesita.scrollLeft += imagenes[contadorImagen].clientWidth;contadorImagen+=1}
+    console.log(contadorImagen)
+}
