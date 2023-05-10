@@ -1,0 +1,62 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding-top: 7em;
+  }
+  
+.resenia {
+  display: inline-flex;
+  background: rgb(37, 111, 78);
+  justify-content: center;
+  border: 1px solid white;
+  margin: 0.5em;;
+}
+.resenia a {
+  padding: 0.5em;
+  min-width: 10em;
+}
+.resenia img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.resenia p {
+  padding: 0.5em;
+  max-height: 10em;
+  text-align: justify;
+  overflow: auto;
+
+}
+
+@media (max-width: 1100px) {
+    main > .resenia {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 850px) {
+    main > .resenia {
+      grid-template-columns: 1fr;
+    }
+    .contenido {
+      width: 80%;
+      margin: 10px auto;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    main {
+      flex-direction: column;
+      align-items: center;
+    }
+    main > .resenia {
+      width: 100%;
+    }
+  }
+  

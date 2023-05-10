@@ -14,19 +14,19 @@
             <div class="head">
                 <a href="index.html"><img src="img/logo.png" alt="Inicio" class="head-logo"></a>
             </div>
-            <form action="index.html">
+            <form action="#">
                 <div class="inp">
                     <label for="usuario">Usuario:</label> <br>
-                    <input type="text" class="user" name="usuario">
+                    <input type="text" id="user" name="usuario" required>
                 </div>
                 <div class="inp">
                     <label for="contra">Contraseña:</label> <br>
-                    <input type="password" class="password" name="contra">
+                    <input type="password" id="password" name="contra" required>
                 </div>
                 <div class="send">
                     <label for="recordar">Recordar mis datos</label>
                     <input type="checkbox"> <br>
-                    <input type="submit" value="Acceder" id="button-acceder">
+                    <input type="submit" value="Acceder" id="button-acceder" onclick="validarUsuario()">
                     <div>
                         <a href="">Olvidé mi usuario</a> <span>|</span> <a href="">Olvidé mi contraseña</a>
                     </div>
@@ -37,10 +37,9 @@
                     <a href="register.html"><button type="button" id="button-registrar">Registrarme</button></a>
                 </div>
             </form>
-            <div class="foot">
-
-            </div>
         </main>
     </div>
+
+    <script src="usuarios.js"></script>
 </body>
 </html>

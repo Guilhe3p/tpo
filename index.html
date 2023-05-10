@@ -14,19 +14,8 @@
     <script src="calesita.js"></script>
 </head>
 <body>
-    <header>
+    <header id="header">
         
-        <div class="cont-logo"><a href="index.html"><img class="head-logo" src="img/logo.png" alt="Inicio"></a></div>
-        
-        <nav>
-            <a class="navi" href="eventos.html">Eventos</a></li>
-            <a class="navi" href="nosotros.html">Nosotros</a></li>
-            <a class="navi" href="">Reseñas</a></li>
-        </nav> 
-        <div class="logs">
-            <a class="login" href="register.html">Registrarme</a>
-            <a class="login" href="login.html">Acceder</a>
-        </div>
     </header>
 
 
@@ -39,22 +28,54 @@
     
             <article class="tops">
                 <h4>Top nuevos del mes</h4>
-                <section><img src="img/monopoly.jpeg" alt=""><p>Votos: 3500 <br> Calificacion: () () () () ()</p></section>
-                <section><img src="img/monopoly.jpeg" alt=""><p>Votos: 3500 <br> Calificacion: () () () () ()</p></section>
-                <section><img src="img/monopoly.jpeg" alt=""><p>Votos: 3500 <br> Calificacion: () () () () ()</p></section>
-                <section><img src="img/monopoly.jpeg" alt=""><p>Votos: 3500 <br> Calificacion: () () () () ()</p></section>
-                <section><img src="img/monopoly.jpeg" alt=""><p>Votos: 3500 <br> Calificacion: () () () () ()</p></section>
+                <section><img src="img/ultimate-railroads.jpg" alt=""><p>Ultimate Railroads<br>
+                <!-- <img src="/img/icono.png"><img src="/img/icono.png"><img src="/img/icono.png"><img src="/img/icono.png"><img src="/img/icono.png"> -->
+                </p></section>
+                <section><img src="img/gloomhaven.jpg" alt=""><p>Gloomhaven Fauces de León<br> 
+                <!-- <img src="/img/icono.png"><img src="/img/icono.png"><img src="/img/icono.png"><img src="/img/icono.png"><img src="/img/vacio.png"> -->
+                </p></section>
+                <section><img src="img/beyond-the-sun.jpg" alt=""><p>Beyond the Sun<br> 
+                <!-- <img src="/img/icono.png"><img src="/img/icono.png"><img src="/img/icono.png"><img src="/img/vacio.png"><img src="/img/vacio.png"> -->
+                </p></section>
+                <section><img src="img/luz-y-sombra.jpg" alt=""><p>Senda de luz y sombra<br> 
+                <!-- <img src="/img/icono.png"><img src="/img/icono.png"><img src="/img/icono.png"><img src="/img/vacio.png"><img src="/img/vacio.png"> -->
+                 </p></section>
+                <section><img src="img/ascension.jpg" alt=""><p>Ascension<br> 
+                <!-- <img src="/img/icono.png"><img src="/img/icono.png"><img src="/img/vacio.png"><img src="/img/vacio.png"><img src="/img/vacio.png"> -->
+                </p></section>
             </article>
     
             <div class="contenedor-calesita">
                 <i class="calesita-izquierda" onclick="moverIzquierda()"><</i>
                 <div class="calesita">
-                    <img src="img/img1.jpg" alt="" class="imgcal"><!--  
-                --><img src="img/img2.jpg" alt="" class="imgcal"><!-- 
-                --><img src="img/img3.jpg" alt="" class="imgcal"><!-- 
-                --><img src="img/img4.jpg" alt="" class="imgcal"><!-- 
-                --><img src="img/img5.jpg" alt="" class="imgcal"><!-- 
-                --><img src="img/img6.jpg" alt="" class="imgcal">
+                    <a href="/eventos/noche-juegos-2023.html">
+                        <div class="caballito" id="caba1" onmouseover="mostrarTexto(this)" onmouseout="quitarTexto(this)">
+                            <h1 style="display: none;">Noche de Juegos en FCEN</h1>
+                            <img src="img/fcen.jpg" alt="" class="imgcal"></div> 
+                    </a>
+                    <a href="/eventos/juegos-para-todos.html">
+                        <div class="caballito" id="caba2" onmouseover="mostrarTexto(this)" onmouseout="quitarTexto(this)">
+                            <h1 style="display: none;">Evento Local: Juegos para todos</h1>
+                            <img src="img/ludocracia.jpeg" alt="" class="imgcal"></div>
+                    </a>
+                    <a href="/eventos/torneo-chaco.html">
+                        <div class="caballito" id="caba3" onmouseover="mostrarTexto(this)" onmouseout="quitarTexto(this)">
+                            <h1 style="display: none;">La Magia se apoderó de chaco</h1>
+                            <img src="img/magic-chaco.jpg" alt="" class="imgcal"></div> 
+                    </a>
+                    <a href="/eventos/conferencia-messa.html">
+                        <div class="caballito" id="caba4" onmouseover="mostrarTexto(this)" onmouseout="quitarTexto(this)">
+                            <h1 style="display: none;">El camino a la gloria</h1>
+                            <img src="img/Antonie-Griezmann-yu-gi-oh.jpg" alt="" class="imgcal"></div> 
+                    </a>
+                    <a href="/eventos/jornada-consiencia.html">
+                        <div class="caballito" id="caba5" onmouseover="mostrarTexto(this)" onmouseout="quitarTexto(this)">
+                            <h1 style="display: none;">Jornada de Concientización sobre los Peligros del Juego</h1>                        </h1>
+                            <img src="img/peligro.jpg" alt="" class="imgcal"></div>
+                    </a>
+                    <div class="caballito" id="caba6" onmouseover="mostrarTexto(this)" onmouseout="quitarTexto(this)">
+                        <h1 style="display: none;">Noche de Juegos en FCEN</h1>
+                        <img src="img/fcen.jpg" alt="" class="imgcal"></div>
                 </div>
                 <i class="calesita-derecha" onclick="moverDerecha()">></i>
             </div>

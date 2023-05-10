@@ -1,0 +1,66 @@
+{
+    "results": [
+        {
+            "gender": "male",
+            "name": {
+                "title": "Mr",
+                "first": "Hugo",
+                "last": "Roald"
+            },
+            "location": {
+                "street": {
+                    "number": 4017,
+                    "name": "Hamborgveien"
+                },
+                "city": "Viggja",
+                "state": "Buskerud",
+                "country": "Norway",
+                "postcode": "9990",
+                "coordinates": {
+                    "latitude": "41.1447",
+                    "longitude": "-28.6799"
+                },
+                "timezone": {
+                    "offset": "+1:00",
+                    "description": "Brussels, Copenhagen, Madrid, Paris"
+                }
+            },
+            "email": "hugo.roald@example.com",
+            "login": {
+                "uuid": "5a764e23-8624-4feb-b059-eb88f594441f",
+                "username": "greenmeercat913",
+                "password": "0101",
+                "salt": "Fyhs93S9",
+                "md5": "8fa9b018622b3cceb27d762809de117e",
+                "sha1": "3bb309f1085de4d1215d11474658b45c6150cc60",
+                "sha256": "b6f1e2167ac6802108e8922657e1304a642c82dc213c458d05b3f5a69efea12f"
+            },
+            "dob": {
+                "date": "1986-11-13T10:40:14.998Z",
+                "age": 36
+            },
+            "registered": {
+                "date": "2013-07-24T17:46:48.036Z",
+                "age": 9
+            },
+            "phone": "83623209",
+            "cell": "48062155",
+            "id": {
+                "name": "FN",
+                "value": "13118620164"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/55.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/55.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/55.jpg"
+            },
+            "nat": "NO"
+        }
+    ],
+    "info": {
+        "seed": "e02da23b84969508",
+        "results": 1,
+        "page": 1,
+        "version": "1.4"
+    }
+}

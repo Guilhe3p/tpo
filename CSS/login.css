@@ -61,7 +61,7 @@ form{
     background-color: bisque;
 }
 
-.password, .user{
+#password, #user{
     width: 100%;
     height: 40px;
     font-size: large;

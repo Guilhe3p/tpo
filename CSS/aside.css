@@ -1,8 +1,7 @@
 aside{
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
+    /* flex-direction: column; */
     width: 350px;
-    height: 600px;
     margin: 10px;
     background-color: white;
     /* border: 4px #D4E073 solid; */
@@ -17,7 +16,6 @@ aside article{
 } aside article h5{margin: auto 10px;}
 aside > *{
     color: #3F403C;
-    text-decoration: none;
 }
 
 aside article img{
@@ -32,7 +30,6 @@ aside {
   animation-name: anim;
   animation-duration: 900ms;
   animation-timing-function:ease-out;
-  
 }
 
 @keyframes anim {

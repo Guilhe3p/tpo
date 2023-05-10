@@ -2,10 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: Robotto, Arial, Helvetica, sans-serif; */
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Poppins,Roboto,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-body{background-color: #ECF0F1;}
+body{
+    background-color: #ECF0F1;
+    /* background-color: #0f5202; */
+}
 
 header{
     background-color: #FFCD29;
@@ -107,5 +109,19 @@ nav  a:hover{
 
 @font-face {
     font-family: Robotto;
-    src: url(/Fuentes/Roboto-Regular.ttf);
+    src: url(/Fuentes/Roboto/Roboto-Regular.ttf);
 }
+@font-face {
+    font-family: Poppins;
+    src: url(/Fuentes/Poppins/Poppins-Regular.ttf);
+}
+
+
+/* prueba con login */
+.usua{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border: 3px black solid;
+} .usua img{ height: 70%;border-radius: 50%;}

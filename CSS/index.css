@@ -11,7 +11,6 @@ main{
 
 main > .mains{
     display: grid;
-    overflow: scroll;
     grid-template-columns: 75% 25%;
     column-gap: 10px;
     background-color: #D9DCC4;
@@ -26,39 +25,66 @@ main > .mains{
     grid-column: 1/2;
     grid-row: 1/2;
 }
-
+.mains .banner{
+    grid-row: 1 / 2;
+}
+/* TOPS */
 .mains > .tops{
     display: flex;
+    height: 450px;
+    width: 250px;
     flex-direction: column;
-    background-color: aqua;
+    background-color: green;
     align-items: center;
     grid-column: 2/3;
-    grid-row: 1 / 20;
-} 
+    grid-row: 1 / 3;
+} .tops p{margin: auto 10px;}
 .mains > .tops > section{
     display: flex;
     width: 90%;
+    border: 2px black solid;
+    border-radius: 5px;
     background-color: white;
-} .mains > .tops > section > img{    width: 95px; height: 95px;padding: 4px; border-radius: 10px;}
+    padding: 5px 0 5px 0;
+} .mains > .tops > section > img{width: 70px; height: 70px;padding: 4px; border-radius: 10px;}
+.mains > .tops > section > p img{width: 25px; height: 25px;padding: 1px; border-radius: 7px;}
 
 
 
 /* CARRUSEL */
 .contenedor-calesita{
+    grid-row: 2 / 3;
+    display: flex;
     height: 150px;
+    align-items: center;
 }
 
 .contenedor-calesita .calesita{
-    /* display: inline-flex; */
+    display:table;
+    height: 100%;
+    width: 95%;
     white-space: nowrap;
     overflow: hidden;
     scroll-behavior: smooth;
 }
 
-.calesita img{
-    width: calc(100% / 3);
-    object-fit: cover;
+.calesita div img{
+    grid-area: soloyo;
+    z-index: 0;
+    width: 90%;
+    border-radius: 5px;
+    border: 3px lightgreen solid;
+    margin: 10px 5%;
 }
+
+.calesita .caballito{
+    text-align: center;
+    /* background-color: green; */
+    /* border: 1px black solid; */
+    display: inline-block;
+    height: 150px;
+    width: calc(100% / 3);
+}.caballito:hover{cursor: pointer;}
 
 .contenedor-calesita i{
     display: inline-block;
@@ -71,8 +97,36 @@ main > .mains{
     height: 30px;
     border-radius: 50%;
     line-height: 30px;
-    /* margin: auto 50px; */
 }
+
+.caballito p{
+    position: relative;
+    color: black;
+
+}
+
+.caballito p{
+    animation-name: parrafis;
+    animation-duration: 900ms;
+    animation-timing-function:ease-out;
+}
+  
+  @keyframes parrafis{
+    0% {
+      transform: scale(1);
+      opacity: 0.1;
+    }
+    50% {
+      transform: scale(1.01);
+      transform: translateY(-10px);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(1);
+      /* transform: translateY(-10px); */
+      opacity: 1;
+    }
+  }
 
 @media (max-width:800px) {
     .calesita img{
