@@ -18,19 +18,21 @@ main > article {
   background-color: #0f5202;
   margin: 10px;
   padding: 1em; /*Linea agregada por Esteban*/
+  border: 10px #0D4802 solid;
+  border-radius: 4px;
 }
 
 section {
   /* background-color: rgb(250, 235, 215); */
-  background-color: #f1cd6b;
+  background-color: gray;
   padding: 10px;
   width: 100%;
   overflow: hidden;
-  border: 1px black solid;
+  border: 1px black solid;  
   border-radius: 3px;
 }
 section > * {
-  color: black;
+  color: white;
 }
 
 section .cont-portada {
