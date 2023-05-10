@@ -24,6 +24,9 @@ aside article img{
     padding: 4px;
     border-radius: 10px;
 }
+aside h1{
+  text-align: center;
+}
 
 /* Animacion de guilhe*/
 aside {

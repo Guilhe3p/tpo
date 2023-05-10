@@ -26,6 +26,12 @@ article section{
 } .imagenes img{width: 80%;border-radius: 10px;border: 3px white solid;}
 
 
+@media (max-width: 500px) {
+    main > article{
+        width: 98%;
+        margin: 10px auto;
+    }    
+}
 
 @media (max-width: 900px) {
     main{
