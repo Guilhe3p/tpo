@@ -7,17 +7,17 @@ var footerBody = `
         </div>
         <div class="footer_item" id="footer_item_2">
             <a href="https://www.facebook.com/">
-                <img src="img/Facebook2.ico" alt="Facebook icon">
+                <img src="../img/Facebook2.ico" alt="Facebook icon">
             </a>
             <a href="https://www.instagram.com/">
-                <img src="img/Instagram2.ico" alt="Instagram icon">
+                <img src="../img/Instagram2.ico" alt="Instagram icon">
             </a>
             
             <a href="https://www.twitter.com/">
-                <img src="img/Twitter.ico" alt="Twitter icon">
+                <img src="../img/Twitter.ico" alt="Twitter icon">
             </a>
             <a href="https://www.youtube.com.ar">
-                <img src="img/YouTube.ico" alt="Youtube icon">
+                <img src="../img/YouTube.ico" alt="Youtube icon">
             </a>
         </div>
         <div class="footer_item" id="footer_item_3">
@@ -34,52 +34,127 @@ var asideBody = `
 <h1 style="margin: 5px auto;">Novedades</h1>
 <a href="#">
     <article>
-        <img src="img/yu-gi-oh.jpg" alt="">
+        <img src="../img/yu-gi-oh.jpg" alt="">
         <h5>El gran maestro Gregorio Messa retiene por decimoséptima vez el titulo de <i>Yu-gi-oh</i></h5>
     </article>
 </a>
 <a href="#">
     <article>
-        <img src="img/viejo-vs-nuevo.jpg" alt="">
+        <img src="../img/viejo-vs-nuevo.jpg" alt="">
         <h5>Crece la enemistad entre la faccion Clasica y la Reformista por los derechos de los <i>"casuals"</i></h5>
     </article>
 </a>
 <a href="#">
     <article>
-        <img src="img/vaca-aplasta4.jpg" alt="">
+        <img src="../img/vaca-aplasta4.jpg" alt="">
         <h5>TRAGEDIA: Campeon mundial de truco muere aplastado por una ternera</h5>
     </article>
 </a>
 <a href="#">
     <article>
-        <img src="img/monopoly.jpeg" alt="">
+        <img src="../img/monopoly.jpeg" alt="">
         <h5>Los reformistas colorados buscan prohibir la usura en el Monopoly, azules entran en pánico</h5>
+    </article>
+</a>
+<a href="#">
+    <article>
+        <img src="../img/ludo-barbie.jpg" alt="">
+        <h5>El ludo de Barbie que causa furor entre los ludocas más veteranos</h5>
     </article>
 </a>`
 
+var headerBody = `
+<div class="cont-logo"><a href="../index.html"><img class="head-logo" src="../img/logo.png" alt="Inicio"></a></div>
+        
+<nav>
+    <a class="navi" href="../eventos.html">Eventos</a></li>
+    <a class="navi" href="../nosotros.html">Nosotros</a></li>
+    <a class="navi" href="../biblioteca.html">Reseñas</a></li>
+</nav> 
+<div class="logs">
+    <a class="login" href="../register.html">Registrarme</a>
+    <a class="login" href="../login.html">Acceder</a>
+</div>
+<div class="usua" onclick="cerrarSesion()">
+    
+</div>
+`
 
 document.getElementById("footer").innerHTML = footerBody
 document.getElementById("novedades").innerHTML = asideBody
- 
+document.getElementById("header").innerHTML = headerBody
+
+
+nomus = sessionStorage.getItem("Usuario")
+if (sessionStorage.getItem("Usuario") != undefined){
+    logs = document.querySelector(".logs")
+    logs.style.display = "none"
+    usuarioRef = document.querySelector(".usua")
+    usuarioRef.innerHTML = `
+    <img src="../img/sin_foto.jpeg" alt="">
+    <h2>${nomus}</h2>`
+    usuarioRef.style.display = "flex"
+}
+
+function cerrarSesion(){
+    sessionStorage.removeItem("Usuario")
+    window.location.href = "index.html"
+}
+
+
+
 
 //SlideHow
 calesita = document.querySelector(".calesita")
-imagenes = document.getElementsByClassName("imgcal")
+imagenes = document.getElementsByClassName("caballito")
 var cont = document.querySelector(".contenedor-calesita")
 var contadorImagen = 0
+console.log(contadorImagen)
 
 function moverIzquierda(){
+    if (contadorImagen < 0){
+        contadorImagen = 3
+    }
+    if (contadorImagen > 6){
+        contadorImagen = 0
+    }
     if (calesita.scrollLeft == 0){
         contadorImagen = 3
         calesita.scrollLeft = calesita.clientWidth
-    } else{calesita.scrollLeft -= imagenes[contadorImagen].clientWidth;contadorImagen-=1}
+    } else{calesita.scrollLeft -= imagenes[contadorImagen].clientWidth+1;contadorImagen-=1}
     console.log(contadorImagen)
 }
 
 function moverDerecha(){
-    if (calesita.scrollLeft > cont.clientWidth){
+    if (contadorImagen < 0){
+        contadorImagen = 3
+    }
+    if (contadorImagen > 6){
+        contadorImagen = 0
+    }
+    if (contadorImagen>2){
         contadorImagen = 0
         calesita.scrollLeft = 0
     }else{calesita.scrollLeft += imagenes[contadorImagen].clientWidth;contadorImagen+=1}
     console.log(contadorImagen)
+}
+
+var texto = false
+
+function mostrarTexto(objeto){
+    if (texto==false){
+        titulo=document.querySelector(`#${objeto.id} > h1`)
+        if (titulo.textContent.length>30){
+            objeto.innerHTML+=`<p>${titulo.textContent.substr(0,30)}...</p>`
+        } else{
+            objeto.innerHTML+=`<p>${titulo.textContent}</p>`
+        }
+        
+        texto = true
+    }
+}
+function quitarTexto(objeto){
+    texto = false
+    parrafos = document.querySelectorAll(`#${objeto.id} > p`)
+    parrafos[0].remove();
 }
