@@ -4,33 +4,36 @@
 }
 
 main {
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    padding-top: 7em;
-  }
-  
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.contenido{
+  width: 80%;
+} 
 .resenia {
-  display: inline-flex;
-  background: rgb(37, 111, 78);
-  justify-content: center;
-  border: 1px solid white;
+  display: flex;
+  background: #0f5202;
+  border: 10px #0D4802 solid;
+  border-radius: 0.5em;
   margin: 0.5em;;
+  align-items: center;
 }
 .resenia a {
   padding: 0.5em;
+  width: 20%;
   min-width: 10em;
 }
 .resenia img {
-  object-fit: cover;
+  object-fit: scale-down;
   width: 100%;
-  height: 100%;
+  height: 10em;
 }
 .resenia p {
   padding: 0.5em;
   max-height: 10em;
   text-align: justify;
-  overflow: auto;
+  color: aquamarine;
 
 }
 
@@ -40,13 +43,13 @@ main {
     }
   }
   
-  @media (max-width: 850px) {
+  @media (max-width: 900px) {
     main > .resenia {
       grid-template-columns: 1fr;
     }
     .contenido {
-      width: 80%;
-      margin: 10px auto;
+      width: 100%;
+      margin: 5px;
     }
   }
   
