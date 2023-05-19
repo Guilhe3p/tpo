@@ -11,7 +11,7 @@ main {
 .contenido{
   width: 80%;
 } 
-.resenia {
+.biblioteca {
   display: flex;
   background: #0f5202;
   border: 10px #0D4802 solid;
@@ -19,17 +19,17 @@ main {
   margin: 0.5em;;
   align-items: center;
 }
-.resenia a {
+.biblioteca a {
   padding: 0.5em;
   width: 20%;
   min-width: 10em;
 }
-.resenia img {
+.biblioteca img {
   object-fit: scale-down;
   width: 100%;
   height: 10em;
 }
-.resenia p {
+.biblioteca p {
   padding: 0.5em;
   max-height: 10em;
   text-align: justify;
@@ -38,13 +38,13 @@ main {
 }
 
 @media (max-width: 1100px) {
-    main > .resenia {
+    main > .biblioteca {
       grid-template-columns: 1fr 1fr;
     }
   }
   
   @media (max-width: 900px) {
-    main > .resenia {
+    main > .biblioteca {
       grid-template-columns: 1fr;
     }
     .contenido {
@@ -58,7 +58,7 @@ main {
       flex-direction: column;
       align-items: center;
     }
-    main > .resenia {
+    main > .biblioteca {
       width: 100%;
     }
   }
