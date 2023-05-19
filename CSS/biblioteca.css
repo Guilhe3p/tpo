@@ -33,19 +33,23 @@ main {
   padding: 0.5em;
   max-height: 10em;
   text-align: justify;
-  color: aquamarine;
+  color: #bfe19f;
+}
 
+.biblioteca h3{
+color: #f1cb6d;
 }
 
 @media (max-width: 1100px) {
-    main > .biblioteca {
-      grid-template-columns: 1fr 1fr;
+    .biblioteca {
+    flex-direction: row;
     }
+
   }
   
   @media (max-width: 900px) {
-    main > .biblioteca {
-      grid-template-columns: 1fr;
+    .biblioteca {
+      flex-direction: column;
     }
     .contenido {
       width: 100%;
