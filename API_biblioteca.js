@@ -1,7 +1,5 @@
-//fetch('https://api.boardgameatlas.com/api/lists?username=trentellingsen&client_id=JLBr5npPhV')
 fetch("https://api.boardgameatlas.com/api/search?client_id=JLBr5npPhV")
     .then((response) => response.json()) // convertir a json
-    //.then(res => console.log(res))
     .then((data) => mostrarData(data)) //imprimir los datos en la consola
     .catch((err) => console.log("Solicitud fallida", err)); // Capturar errores
 
@@ -12,7 +10,7 @@ const mostrarData = (data) => {
     for (let i = 0; i < data.games.length; i++) {
         body += `<div class="biblioteca">
                         <a href="resenia_juego.html?id=${data.games[i].id}">
-                            <img src="${data.games[i].image_url}" alt="${data.games[i].name}" />
+                            <img src="${data.games[i].images.small}" alt="${data.games[i].name}" />
                         </a>
                         <div>
                             <h3>
