@@ -32,31 +32,31 @@ var footerBody = `
 
 var asideBody = `
 <h1 style="margin: 5px auto;">Novedades</h1>
-<a href="#">
+<a href="../novedades/yugioh.html">
     <article>
         <img src="../img/yu-gi-oh.jpg" alt="">
         <h5>El gran maestro Gregorio Messa retiene por decimoséptima vez el titulo de <i>Yu-gi-oh</i></h5>
     </article>
 </a>
-<a href="#">
+<a href="../novedades/enemistad-por-casuals.html">
     <article>
         <img src="../img/viejo-vs-nuevo.jpg" alt="">
         <h5>Crece la enemistad entre la faccion Clasica y la Reformista por los derechos de los <i>"casuals"</i></h5>
     </article>
 </a>
-<a href="#">
+<a href="../novedades/tragedia-truco.html">
     <article>
         <img src="../img/vaca-aplasta4.jpg" alt="">
         <h5>TRAGEDIA: Campeon mundial de truco muere aplastado por una ternera</h5>
     </article>
 </a>
-<a href="#">
+<a href="../novedades/usura-monopoly.html">
     <article>
         <img src="../img/monopoly.jpeg" alt="">
         <h5>Los reformistas colorados buscan prohibir la usura en el Monopoly, azules entran en pánico</h5>
     </article>
 </a>
-<a href="#">
+<a href="../novedades/barbie-ludo.html">
     <article>
         <img src="../img/ludo-barbie.jpg" alt="">
         <h5>El ludo de Barbie que causa furor entre los ludocas más veteranos</h5>
@@ -145,7 +145,7 @@ function mostrarTexto(objeto){
     if (texto==false){
         titulo=document.querySelector(`#${objeto.id} > h1`)
         if (titulo.textContent.length>30){
-            objeto.innerHTML+=`<p>${titulo.textContent.substr(0,30)}...</p>`
+            objeto.innerHTML+=`<p>${titulo.textContent.substr(0,27)}...</p>`
         } else{
             objeto.innerHTML+=`<p>${titulo.textContent}</p>`
         }
@@ -158,3 +158,14 @@ function quitarTexto(objeto){
     parrafos = document.querySelectorAll(`#${objeto.id} > p`)
     parrafos[0].remove();
 }
+
+function setFavicons(favImg){
+    let headTitle = document.querySelector('head');
+    let setFavicon = document.createElement('link');
+    setFavicon.setAttribute('rel','shortcut icon');
+    setFavicon.setAttribute('href',favImg);
+    headTitle.appendChild(setFavicon);
+}
+
+setFavicons("../img/icono.ico")
+

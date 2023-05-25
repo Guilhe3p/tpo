@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Club de la Mesa</title>
+    <title>Juego Club</title>
     <link rel="stylesheet" href="CSS/header2.css">
-    <link rel="shorcut icon" href="img/icono.ico">
     <link rel="stylesheet" href="CSS/footer.css">
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="CSS/aside.css">
     <link rel="stylesheet" href="CSS/slider.css">
-    <script src="calesita.js"></script>
+    <script src="script/API_Atlas.js"></script>
 </head>
 <body>
     <header id="header">
@@ -21,32 +20,22 @@
 
 
     <main>
+        <div id="center">
+            <h3><b>Encuentra tu propia aventura</b></h3>
+            <video autoplay muted loop>
+                <source src="/img/video/center.mp4" type="video/mp4" >
+            </video>
+        </div>
+        <div class="banner">
+            <img src="img/banner.jpeg" alt="">
+        </div>
+        <article id="presentacion">
+            <h1>Bienvenido a <i>Juego Club</i></h1>
+            <p>¡Bienvenidos a Juego Club, el lugar donde la diversión y la emoción se encuentran en cada partida! Prepárate para sumergirte en un universo de juegos de mesa lleno de novedades, eventos y reseñas que te dejarán sin aliento. Desde los clásicos reinventados hasta las últimas creaciones, nuestro objetivo es mantenerte al tanto de todo lo que necesitas saber para llevar tus veladas de juego al siguiente nivel. ¿Quieres descubrir qué juego se convertirá en tu favorito? ¿Estás listo para adentrarte en un mundo de estrategia, imaginación y risas interminables? ¡Únete a nosotros en Juego Club y desata tu pasión por los juegos de mesa!</p>
+        </article>
         <div class="mains">
-            <section class="banner">
-                <img src="img/banner.jpeg" alt="">
-            </section>
-    
-            <article class="tops">
-                <h4>Top nuevos del mes</h4>
-                <section><img src="img/ultimate-railroads.jpg" alt=""><p>Ultimate Railroads<br>
-                <!-- <img src="/img/icono.png"><img src="/img/icono.png"><img src="/img/icono.png"><img src="/img/icono.png"><img src="/img/icono.png"> -->
-                </p></section>
-                <section><img src="img/gloomhaven.jpg" alt=""><p>Gloomhaven Fauces de León<br> 
-                <!-- <img src="/img/icono.png"><img src="/img/icono.png"><img src="/img/icono.png"><img src="/img/icono.png"><img src="/img/vacio.png"> -->
-                </p></section>
-                <section><img src="img/beyond-the-sun.jpg" alt=""><p>Beyond the Sun<br> 
-                <!-- <img src="/img/icono.png"><img src="/img/icono.png"><img src="/img/icono.png"><img src="/img/vacio.png"><img src="/img/vacio.png"> -->
-                </p></section>
-                <section><img src="img/luz-y-sombra.jpg" alt=""><p>Senda de luz y sombra<br> 
-                <!-- <img src="/img/icono.png"><img src="/img/icono.png"><img src="/img/icono.png"><img src="/img/vacio.png"><img src="/img/vacio.png"> -->
-                 </p></section>
-                <section><img src="img/ascension.jpg" alt=""><p>Ascension<br> 
-                <!-- <img src="/img/icono.png"><img src="/img/icono.png"><img src="/img/vacio.png"><img src="/img/vacio.png"><img src="/img/vacio.png"> -->
-                </p></section>
-            </article>
-    
             <div class="contenedor-calesita">
-                <i class="calesita-izquierda" onclick="moverIzquierda()"><</i>
+                <b class="calesita-izquierda" onclick="moverIzquierda()"><</b>
                 <div class="calesita">
                     <a href="/eventos/noche-juegos-2023.html">
                         <div class="caballito" id="caba1" onmouseover="mostrarTexto(this)" onmouseout="quitarTexto(this)">
@@ -75,9 +64,10 @@
                     </a>
                     <div class="caballito" id="caba6" onmouseover="mostrarTexto(this)" onmouseout="quitarTexto(this)">
                         <h1 style="display: none;">Noche de Juegos en FCEN</h1>
-                        <img src="img/fcen.jpg" alt="" class="imgcal"></div>
+                        <img src="img/fcen.jpg" alt="" class="imgcal">
+                    </div>
                 </div>
-                <i class="calesita-derecha" onclick="moverDerecha()">></i>
+                <b class="calesita-derecha" onclick="moverDerecha()">></b>
             </div>
 
 
@@ -85,7 +75,25 @@
 
         </div>
 
-        <aside id="novedades"></aside>
+        <aside>
+            <h1 style="margin: 5px auto;">Novedades</h1>
+            <article><img src="img/ultimate-railroads.jpg" alt=""><h5>Ultimate Railroads<br>
+                <!-- <img src="/img/icono.png"><img src="/img/icono.png"><img src="/img/icono.png"><img src="/img/icono.png"><img src="/img/icono.png"> -->
+            </h5></article>
+            <article><img src="img/gloomhaven.jpg" alt=""><h5>Gloomhaven Fauces de León<br> 
+            <!-- <img src="/img/icono.png"><img src="/img/icono.png"><img src="/img/icono.png"><img src="/img/icono.png"><img src="/img/vacio.png"> -->
+            </h5></article>
+            <article><img src="img/beyond-the-sun.jpg" alt=""><h5>Beyond the Sun<br> 
+            <!-- <img src="/img/icono.png"><img src="/img/icono.png"><img src="/img/icono.png"><img src="/img/vacio.png"><img src="/img/vacio.png"> -->
+            </h5></article>
+            <article><img src="img/luz-y-sombra.jpg" alt=""><h5>Senda de luz y sombra<br> 
+            <!-- <img src="/img/icono.png"><img src="/img/icono.png"><img src="/img/icono.png"><img src="/img/vacio.png"><img src="/img/vacio.png"> -->
+                </h5></article>
+            <article><img src="img/ascension.jpg" alt=""><h5>Ascension<br> 
+            <!-- <img src="/img/icono.png"><img src="/img/icono.png"><img src="/img/vacio.png"><img src="/img/vacio.png"><img src="/img/vacio.png"> -->
+            </h5></article>
+        </aside>
+        <div id="novedades" style="display: none;"></div>
     </main>
 
 

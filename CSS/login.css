@@ -54,6 +54,13 @@ form{
     height: 70%;
     margin: auto;
 }
+#incorrecto{
+    opacity: 0;
+    color:red;
+    font-size:small;
+
+    transition: opacity 0.5s ease-in;
+}
 
 .foot{
     width: 100%;
@@ -84,6 +91,9 @@ form{
     border: 0;
     font-size: larger;
 }
+#button-acceder:hover{cursor: pointer;}
+#button-acceder:active{background-color: #e5d091;}
+
 
 #button-registrar{
     width: 100%;

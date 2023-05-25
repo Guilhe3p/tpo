@@ -3,14 +3,19 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Poppins,Roboto,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
 }
 body{
-    background-color: #ECF0F1;
-    /* background-color: #0f5202; */
+    /* background-color: #ECF0F1; */
+    background-color: #bfe19f;
+    background-image: url("../img/dadosPattern.png");
+    background-size: 150px;
+    background-repeat: repeat;
 }
 
 header{
-    background-color: #FFCD29;
+    /* background-color: #FFCD29; */
+    background-color: #0f5202;
     height: 100px;
     min-height: 100px;
     width: 100%;
@@ -46,21 +51,21 @@ nav{
 }
 .logs a{
     text-decoration: none;
-    color: black;
+    color: white;
     font-family:Arial, Helvetica, sans-serif;
     font-size: large;
     padding: 1vh;
-    margin: auto;
+    margin: auto 3px;
 }
 .logs a:hover{
-    background-color: #D4E073;
-    border: 1px black solid;
+    background-color: #1290cb;
+    /* border: 1px black solid; */
     border-radius: 15px;
 }
 
 .navi{
     text-decoration: none;
-    color: black;
+    color: white;
     margin: auto;
     padding: 1vw;
     /* font-family:Arial, Helvetica, sans-serif; */
@@ -68,7 +73,7 @@ nav{
 }
 
 nav  a:hover{
-    color: white;
+    color: #bfe19f;
 }
 
 @media (max-width:390) {

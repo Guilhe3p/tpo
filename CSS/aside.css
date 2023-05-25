@@ -1,11 +1,10 @@
 aside{
     display: inline-block;
-    /* flex-direction: column; */
     width: 350px;
     margin: 10px;
     background-color: white;
-    /* border: 4px #D4E073 solid; */
     border-radius: 4px;
+    height: fit-content;
 }
 
 aside article{
@@ -26,6 +25,10 @@ aside article img{
 }
 aside h1{
   text-align: center;
+  width: 100%;
+  padding: 5px;
+  background-color: lightblue;
+  top: 0;
 }
 
 /* Animacion de guilhe*/

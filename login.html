@@ -12,9 +12,9 @@
     <div class="container">
         <main>
             <div class="head">
-                <a href="index.html"><img src="img/logo.png" alt="Inicio" class="head-logo"></a>
+                <a href="index.html"><img src="img/logo2.png" alt="Inicio" class="head-logo"></a>
             </div>
-            <form action="#">
+            <form >
                 <div class="inp">
                     <label for="usuario">Usuario:</label> <br>
                     <input type="text" id="user" name="usuario" required>
@@ -22,11 +22,12 @@
                 <div class="inp">
                     <label for="contra">Contraseña:</label> <br>
                     <input type="password" id="password" name="contra" required>
+                    <p id="incorrecto">Usuario o contraseña incorrectos</p>
                 </div>
                 <div class="send">
                     <label for="recordar">Recordar mis datos</label>
                     <input type="checkbox"> <br>
-                    <input type="submit" value="Acceder" id="button-acceder" onclick="validarUsuario()">
+                    <input type="button" value="Acceder" id="button-acceder" onclick="validarUsuario()">
                     <div>
                         <a href="">Olvidé mi usuario</a> <span>|</span> <a href="">Olvidé mi contraseña</a>
                     </div>
@@ -40,6 +41,6 @@
         </main>
     </div>
 
-    <script src="usuarios.js"></script>
+    <script src="script/usuarios.js"></script>
 </body>
 </html>
