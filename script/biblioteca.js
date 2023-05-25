@@ -11,17 +11,24 @@ for (let i = 0; i < arrayJuegos.length; i++) {
         <a href="resenia_juego.html?id=${arrayJuegos[i].id}">
         <img src="${arrayJuegos[i].images.small}" alt="${arrayJuegos[i].name}" />
         </a>
-        <div>
-        <h3>
-        Nombre del Juego:  ${arrayJuegos[i].name}
-        </h3>
-        <p>
-        <b>Tiempo de Juego:  </b>  ${arrayJuegos[i].playtime} minutos
-        </p>
-        <p>
-        <b>Cantidad de Jugadores:  </b>  ${arrayJuegos[i].players} personas
-        </p>
+        <div class="titulo">
+        <a href="resenia_juego.html?id=${arrayJuegos[i].id}">
+        <h1>
+        ${arrayJuegos[i].name}
+        </h1>
+        </a>
         </div>
+        <div class="caracteristicas">
+            <div class="caracteristica">
+                <img src="img/tiempo2.png" alt=""> 
+                <p>${arrayJuegos[i].playtime} minutos</p>
+            </div>
+            <div class="caracteristica">
+                <img src="img/jugadores.png" alt="">
+                <p>${arrayJuegos[i].players} personas</p>
+            </div>
+        </div>
+
         </div>`;
 }
 
