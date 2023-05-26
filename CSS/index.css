@@ -1,6 +1,28 @@
-*{
-    box-sizing: border-box;   
-    text-decoration: none;
+
+main{
+    position: relative;
+    display: flex;
+    place-content: center;
+    width: 100%;
+}
+aside{
+    grid-area: areaAside;
+}
+
+main > .mains{
+    position: relative;
+    grid-area: areaMains;
+    align-items: center;
+    background-color: aliceblue;    
+    margin: 20px;
+    border: 7px green solid;
+    border-radius: 7px;
+} .mains > h1{color: orange;text-align: center;margin-top: 10px;}
+
+#costado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #center{
@@ -8,7 +30,7 @@
     overflow: hidden;
     width: 90%;
     grid-area: centerArea;
-    margin: auto auto;
+    margin: 20px auto;
 } 
 #center h3{
     position: absolute;
@@ -28,47 +50,20 @@
     object-fit: cover;
     width: 100%;
     height: 200px;
+    border: 3px green solid;
     border-radius: 3px;
+
     animation: defade 0.6s ease-out;
 }
-
-
-main{
-    position: relative;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-areas: 
-    "presArea centerArea" 
-    "areaMains areaAside"
-    "bannerArea areaAside";
-    place-content: center;
-    width: 100%;
-    justify-content: space-evenly;
-}
-aside{
-    grid-area: areaAside;
-}
-
-main > .mains{
-    position: relative;
-    grid-area: areaMains;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* background-color: #D9DCC4; */    
-    margin: 10px;
-} 
 
 .banner > img{
     width: 100%;
     border-radius: 5px;
 }
 .banner{
+    height: fit-content;
     width: 90%;
-    margin: auto auto;
-    padding: 30px;
-    background-color: grey;
-    border: 3px green solid;
+    margin: 20px auto;
 }
 
 #presentacion{
@@ -77,8 +72,9 @@ main > .mains{
     padding: 30px;
     background-color: aliceblue;
     margin: 20px auto;
-    border: 7px green solid;
     border-radius: 7px;
+    height: 300px;
+    overflow: scroll;
 }
 #presentacion h1{
     padding: 7px;
@@ -114,12 +110,10 @@ main > .mains{
 /* CARRUSEL */
 .contenedor-calesita{
     display: flex;
-    height: 170px;
     align-items: center;
     background-color: aliceblue;
     padding: 20px;
     margin: 20px 10px;
-    border: 4px green solid;
 }
 
 .contenedor-calesita .calesita{
@@ -147,7 +141,6 @@ main > .mains{
     /* border: 1px black solid; */
     display: inline-block;
     position: relative;
-    /* height: 150px; */
     width: calc(100% / 3);
 
 }.caballito:hover{cursor: pointer;
@@ -188,46 +181,11 @@ video{
     animation-duration: 900ms;
     animation-timing-function:ease-out;
 }
-  
-/* @keyframes parrafis{
-    0% {
-        transform: scale(1);
-        opacity: 0.1;
-    }
-    50% {
-        transform: scale(1.01);
-        opacity: 0.5;
-    }
-    100% {
-        transform: scale(1);
-        transform: translateY(-15px);
-        opacity: 1;
-    }
-} */
 
 @media (max-width:1020px) {
-    main{
-        grid-template-columns: 1fr;
-        /* grid-template-areas: 
-        "presArea"
-        "centerArea" 
-        "areaMains"
-        "areaAside"
-        "bannerArea"
-        "areaAside"; */
-        column-gap: 30px;
-    }
-}
-
-@media (max-width:800px) {
-    .calesita img{
-        width: 50%;
-    }
-}
-
-@media (max-width:500px) {
-    main{
-        grid-template-columns: 1fr;
+    /* main{
+        grid-template-columns: 100%;
+        grid-template-rows: 400px 400px 400px 400px 400px 400px;
         grid-template-areas: 
         "presArea"
         "centerArea" 
@@ -235,9 +193,24 @@ video{
         "areaAside"
         "bannerArea"
         "areaAside";
-        column-gap: 30px;
+    } */
+    .calesita .caballito{
+        width: 50%;
     }
+}
+
+/* @media (max-width:800px) {
     .calesita img{
+        width: 50%;
+    }
+} */
+
+@media (max-width:800px) {
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .calesita .caballito{
         width: 100%;
     }
 }

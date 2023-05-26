@@ -64,7 +64,9 @@ var asideBody = `
 </a>`
 
 var headerBody = `
-<div class="cont-logo"><a href="../index.html"><img class="head-logo" src="../img/logo.png" alt="Inicio"></a></div>
+<a href="../index.html" class="cont-logo">
+    <img class="head-logo" src="../img/logo.png" alt="Inicio">
+</a>
         
 <nav>
     <a class="navi" href="../eventos.html">Eventos</a></li>

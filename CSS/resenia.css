@@ -16,8 +16,8 @@ main {
 .resenia {
   display: grid;
   grid-template-columns: auto auto;
-  background: white;
-  border: 10px green solid;
+  background: aliceblue;
+  border: 5px green solid;
   border-radius: 0.5em;
   margin: 0.5em;
   align-items: center;

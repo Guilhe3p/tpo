@@ -11,7 +11,7 @@ body{
     background-image: url("../img/dadosPattern.png");
     background-size: 150px;
     background-repeat: repeat;
-    min-width: 425px;
+    min-width: 420px;
 }
 
 header{
@@ -27,13 +27,12 @@ header{
 .cont-logo{
     position: relative;
     width: 180px;
+    margin-left: 10px;
 }
 .head-logo{
-    position: relative;
+    position: absolute;
     height: 80%;
-    margin: 10px auto;
-    left: 10px;
-    border-radius: 15px;
+    top: 10%;
 }
 
 nav{
@@ -59,9 +58,8 @@ nav{
     margin: auto 3px;
 }
 .logs a:hover{
-    /* padding: 10px; */
     background-color: #1290cb;
-    /* border: 1px white solid; */
+    /* border: 1px black solid; */
     border-radius: 15px;
 }
 
@@ -138,10 +136,9 @@ nav  a:hover{
     position: relative;
     justify-content: center;
     align-items: center;
-    margin: 0px 20px;
     /* border: 3px black solid; */
-}
-.usua:hover{cursor: pointer;}
+    margin: 0px 10px;
+} .usua:hover{cursor: pointer;}
 .usua img{
     padding: 5px;
     height: 40px;
