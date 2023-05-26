@@ -59,8 +59,9 @@ nav{
     margin: auto 3px;
 }
 .logs a:hover{
+    /* padding: 10px; */
     background-color: #1290cb;
-    /* border: 1px black solid; */
+    /* border: 1px white solid; */
     border-radius: 15px;
 }
 
@@ -137,7 +138,8 @@ nav  a:hover{
     position: relative;
     justify-content: center;
     align-items: center;
-    border: 3px black solid;
+    margin: 0px 20px;
+    /* border: 3px black solid; */
 }
 .usua:hover{cursor: pointer;}
 .usua img{

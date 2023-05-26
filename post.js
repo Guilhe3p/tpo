@@ -87,11 +87,13 @@ document.getElementById("header").innerHTML = headerBody
 
 nomus = sessionStorage.getItem("Usuario")
 if (sessionStorage.getItem("Usuario") != undefined){
+    let fotous = sessionStorage.getItem("Foto")
+
     logs = document.querySelector(".logs")
     logs.style.display = "none"
     usuarioRef = document.querySelector(".usua")
     usuarioRef.innerHTML = `
-    <img src="../img/sin_foto.jpeg" alt="">
+    <img src="../img/${fotous}" alt="">
     <h2>${nomus}</h2>`
     usuarioRef.style.display = "flex"
 }
