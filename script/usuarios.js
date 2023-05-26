@@ -9,9 +9,8 @@ class Usuario {
     }
 }
 
-ur1 = new Usuario(1,"juan","kk")
+ur1 = new Usuario(1,"JuanPablo","Codo")
 ur2 = new Usuario(2,"guilhe","123")
-ur3 = new Usuario(3,"gg","321")
 
 
 function validarUsuario(){

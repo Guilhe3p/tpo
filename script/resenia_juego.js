@@ -16,9 +16,9 @@ for (let i = 0; i < arrayJuegos.length; i++) {
                                 <img src="${arrayJuegos[i].image_url}" alt=${arrayJuegos[i].name} />
                             </div>
                             <div id="datos_basicos">
-                                    <h3>
-                                    Nombre del Juego:  ${arrayJuegos[i].name}
-                                    </h3>
+                                    <h1>
+                                    ${arrayJuegos[i].name}
+                                    </h1>
                                     <p>
                                     <b>Tiempo de Juego:  </b>  ${arrayJuegos[i].playtime} minutos
                                     </p>

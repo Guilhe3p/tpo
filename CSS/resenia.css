@@ -16,12 +16,12 @@ main {
 .resenia {
   display: grid;
   grid-template-columns: auto auto;
-  background: #0f5202;
-  border: 10px #0D4802 solid;
+  background: white;
+  border: 10px green solid;
   border-radius: 0.5em;
   margin: 0.5em;
   align-items: center;
-  color: wheat;
+  color: #f1cb6d;
   padding: 1em;
 }
 
@@ -40,23 +40,14 @@ main {
 .resenia p {
   padding: 0.5em;
   text-align: justify;
-  color: aquamarine;
-}
-
-.resenia p {
-  padding: 0.5em;
-  /* max-height: 10em; */
-  text-align: justify;
-  color: aquamarine;
+  color: black;
 }
 
 #descripcion {
   grid-area: 2 / span 2;
-}
-
-#descripcion {
   padding-left: 1em;
 }
+
 
 @media (max-width: 1100px) {
   main>.resenia {

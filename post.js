@@ -69,7 +69,7 @@ var headerBody = `
 <nav>
     <a class="navi" href="../eventos.html">Eventos</a></li>
     <a class="navi" href="../nosotros.html">Nosotros</a></li>
-    <a class="navi" href="../biblioteca.html">Reseñas</a></li>
+    <a class="navi" href="../biblioteca.html">Biblioteca</a></li>
 </nav> 
 <div class="logs">
     <a class="login" href="../register.html">Registrarme</a>

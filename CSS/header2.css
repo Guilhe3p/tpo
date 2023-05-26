@@ -11,6 +11,7 @@ body{
     background-image: url("../img/dadosPattern.png");
     background-size: 150px;
     background-repeat: repeat;
+    min-width: 425px;
 }
 
 header{
@@ -138,6 +139,7 @@ nav  a:hover{
     align-items: center;
     border: 3px black solid;
 }
+.usua:hover{cursor: pointer;}
 .usua img{
     padding: 5px;
     height: 40px;
