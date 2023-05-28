@@ -8,20 +8,18 @@ main {
   width: 100%;
   justify-content: space-evenly;
 }
-
-.contenido {
+.contenido{
   width: 80%;
 }
-
 .resenia {
   display: grid;
   grid-template-columns: auto auto;
-  background: aliceblue;
-  border: 5px green solid;
-  border-radius: 0.5em;
+  background: #f2fde8;
+    border: 3px #0f5202 solid;
+    border-radius: 0.5em;
   margin: 0.5em;
   align-items: center;
-  color: #f1cb6d;
+  color: #0f5202;
   padding: 1em;
 }
 
@@ -40,7 +38,7 @@ main {
 .resenia p {
   padding: 0.5em;
   text-align: justify;
-  color: black;
+  color: #0f5202;
 }
 
 #descripcion {

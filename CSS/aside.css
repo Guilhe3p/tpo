@@ -14,7 +14,7 @@ aside article{
     border: 2px white solid;
 } aside article h5{margin: auto 10px;}
 aside > *{
-    color: #3F403C;
+    color: #0f5202;
 }
 
 aside article img{
@@ -27,7 +27,8 @@ aside h1{
   text-align: center;
   width: 100%;
   padding: 5px;
-  background-color: lightblue;
+  color: white;
+  background-color: #1290cb;
   top: 0;
 }
 

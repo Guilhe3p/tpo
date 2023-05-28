@@ -9,7 +9,7 @@ footer{
     bottom: 0;
 }
 .footer_container {
-    background-color: #CAAD4B;
+    background-color: rgba(191,225,159,0.7);
     padding: 20px; 
 }
 
@@ -32,12 +32,12 @@ footer{
 }
 
 footer a img {
-    width: 60%;
+    width: 40%;
 }
 
 #footer_item_1 {
     font-weight: bold;
-    color: #444b54;
+    color: #0f5202;
     width: 30%;
     text-align: right;
     margin-right: 2%;
@@ -48,6 +48,7 @@ footer a img {
 
 #footer_item_1 button {
     margin-top: 5%;
+    color: #0f5202;
 }
 
 #footer_item_2 {
@@ -57,11 +58,11 @@ footer a img {
     text-align: center;
     display: flex;
     flex-direction: row;
-    border-right: 3px solid #444b54;
-    border-left: 3px solid #444b54;
+    border-right: 3px solid #0f5202;
+    border-left: 3px solid #0f5202;
     align-items: center;
     /* justify-content: center; */
-    /* padding: 5% 0; */
+    padding: 0 3%;
 }
 
 #footer_item_3 {

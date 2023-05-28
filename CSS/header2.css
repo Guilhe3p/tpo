@@ -100,7 +100,7 @@ nav  a:hover{
         align-items: center;
     } 
     nav a{
-        border: 1px black solid;
+        /* border: 1px black solid; */
         border-radius: 3px;
         margin: 1px auto;
         flex-direction: row;

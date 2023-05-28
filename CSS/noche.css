@@ -8,16 +8,22 @@ main > article{
     display: flex;
     flex-direction: column;
     justify-content:center;
-    background-color: #D9DCC4;
+    background-color: #f2fde8;
+    color: #0f5202;
     width: 80%;
     justify-content: space-around;
-    margin: 10px 10px;
-} main > article section h1{font-size:xx-large;color: white;}
+    margin: 1% 1%;
+    border: 3px #0f5202 solid;
+    border-radius: 0.5em;
+
+} main > article section h1{font-size:xx-large;color: #0f5202;}
 
 article section{
     /* background-color: #D4E073; */
-    width: 80%;
-    margin: 10px auto;
+    width: 90%;
+    margin: 4% auto;
+    text-align: justify;
+
 }
 .imagenes{
     display: block;

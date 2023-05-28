@@ -81,10 +81,10 @@ var headerBody = `
     
 </div>
 `
-
+document.getElementById("header").innerHTML = headerBody
 document.getElementById("footer").innerHTML = footerBody
 document.getElementById("novedades").innerHTML = asideBody
-document.getElementById("header").innerHTML = headerBody
+
 
 //funciones para usuario
 nomus = sessionStorage.getItem("Usuario")
