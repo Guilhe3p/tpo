@@ -77,10 +77,12 @@ var headerBody = `
     <a class="login" href="../register.html">Registrarme</a>
     <a class="login" href="../login.html">Acceder</a>
 </div>
-<div class="usua" onclick="cerrarSesion()">
+<div class="usua">
     
 </div>
 `
+
+
 document.getElementById("header").innerHTML = headerBody
 document.getElementById("footer").innerHTML = footerBody
 document.getElementById("novedades").innerHTML = asideBody
@@ -94,9 +96,15 @@ if (sessionStorage.getItem("Usuario") != undefined){
     logs = document.querySelector(".logs")
     logs.style.display = "none"
     usuarioRef = document.querySelector(".usua")
-    usuarioRef.innerHTML = `
-    <img src="../img/${fotous}" alt="">
-    <h2>${nomus}</h2>`
+    usuarioRef.innerHTML += `
+    <div class="perfil_data">
+        <img src="../img/${fotous}" alt="">
+        <h2>${nomus}</h2>
+    </div>
+    <div class="usua_options">
+        <h3>Mi Perfil</h3>
+        <h3 onclick="cerrarSesion()">Cerrar sesion</h3>
+    </div>`
     usuarioRef.style.display = "flex"
 }
 
