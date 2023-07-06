@@ -1,0 +1,83 @@
+main{
+    display: grid;
+    grid-template-columns: auto auto;
+    position: relative;
+    width: 98%;
+    /* height: 500px; */
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 10px auto;
+    border: 1px black solid
+}
+
+.data-left{
+    display: inline-block;
+    position: relative;
+    width: fit-content;
+    height: 100%;
+    border-right: 1px black solid;
+    padding: 10px;
+}
+
+.data-left #img_perfil{
+    position: relative;
+    width: 320px;
+    height: 320px;
+    background-color: gainsboro;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+#img_perfil h4{
+    position: absolute;
+    top: 60%;
+    width: 320px;
+    text-align: center;
+    color: lightsteelblue;
+} #img_perfil:hover h4{color: darkblue;}
+#img_perfil img{
+    margin-top: 160px;
+    margin-left: 160px;
+    transform: translate(-50%,-70%);
+    width: 100px;
+    filter: invert(1);
+    filter: invert(0.5) sepia(3) saturate(1) hue-rotate(175deg)
+} 
+#img_perfil:hover img{
+    filter: invert(1);
+    filter: invert(0.3) sepia(20    ) saturate(2) hue-rotate(175deg);
+}
+#img_perfil:hover{
+    cursor: pointer;
+}
+
+.data-left .user-data{
+    width: 97%;
+    padding: 3px;
+    margin: 7px auto;
+    border: 1px black solid;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+
+.main-data{
+    /* height: 100%; */
+    width: 950px;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+.main-data > h1{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+}
+
+#puntuados{
+    display: grid;
+}
+
+.juego-puntuado{
+    width: 80%;
+    height: 100px;
+    margin: 10px;
+    background-color: blueviolet;
+}

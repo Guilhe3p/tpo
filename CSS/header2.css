@@ -142,7 +142,7 @@ nav  a:hover{
     margin: 0px 0;
     background-color:#0f5202;
 } 
-.usua:hover{cursor: pointer;background-color:#bfe19f;}
+.usua:hover{background-color:#bfe19f;}
 .usua:hover .usua_options{display: flex;}
 .usua .perfil_data{
     display: block;
@@ -167,5 +167,6 @@ nav  a:hover{
 }
 .usua_options h3{
     padding: 10px;
+    color: blue;
     transition: background-color 200ms ease-in-out;
-} .usua_options h3:hover{background-color:whitesmoke;}
+} .usua_options h3:hover{background-color:whitesmoke;cursor: pointer;}

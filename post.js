@@ -82,10 +82,13 @@ var headerBody = `
 </div>
 `
 
-
-document.getElementById("header").innerHTML = headerBody
-document.getElementById("footer").innerHTML = footerBody
-document.getElementById("novedades").innerHTML = asideBody
+//colocando si existen los elementos header, footer, aside
+header_doc = document.getElementById("header").innerHTML = headerBody
+footer_doc = document.getElementById("footer")
+aside_doc = document.getElementById("novedades")
+if (header_doc != null){header_doc.innerHTML = headerBody}
+if (footer_doc != null){footer_doc.innerHTML = footerBody}
+if (aside_doc  != null){ aside_doc.innerHTML = asideBody }
 
 
 //funciones para usuario
@@ -102,7 +105,7 @@ if (sessionStorage.getItem("Usuario") != undefined){
         <h2>${nomus}</h2>
     </div>
     <div class="usua_options">
-        <h3>Mi Perfil</h3>
+        <a href="perfil.html"><h3>Mi Perfil</h3></a>
         <h3 onclick="cerrarSesion()">Cerrar sesion</h3>
     </div>`
     usuarioRef.style.display = "flex"
