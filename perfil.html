@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="CSS/header2.css">
     <link rel="stylesheet" href="CSS/footer.css">
     <link rel="stylesheet" href="CSS/perfil.css">
+    <script>if (localStorage.getItem("usuario") == undefined){
+        window.location = "index.html"
+    }</script>
     <title>Mi Perfil</title>
 </head>
 <body>
@@ -23,15 +26,15 @@
             <hr>
             <div class="user-data">
                 <h4>Nombre:</h4>
-                <p id="user-name">JuanPablo</p>
+                <p id="user-name"></p>
             </div>
             <div class="user-data">
                 <h4>E-Mail:</h4>
-                <p id="user-mail">JuanPabloNardone@gmail.com</p>
+                <p id="user-mail"></p>
             </div>
             <div class="user-data">
                 <h4>Fecha de nacimiento:</h4>
-                <p id="user-fnas">04/06/1982</p>
+                <p id="user-fnas"></p>
             </div>
         </div>
         <div class="main-data">
@@ -51,7 +54,7 @@
     </main>
 
     <footer id="footer"></footer>
-
+    <script src="script/perfil.js"></script>
     <script src="post.js"></script>
 </body>
 </html>

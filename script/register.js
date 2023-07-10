@@ -8,7 +8,6 @@ document.getElementById('register').addEventListener('submit', function (event) 
     var nombre = document.getElementById('nombre').value
     var clave = document.getElementById('clave').value
     var f_nas = document.getElementById('fnas').value
-    var imagen = document.getElementById('imagen').value
 
     // Creamos un objeto con los datos del juego
     var usuario = {
@@ -16,8 +15,8 @@ document.getElementById('register').addEventListener('submit', function (event) 
         'nombre': nombre,
         'clave': clave,
         'f_nas': f_nas,
-        'imagen': imagen,
-    }
+        'imagen': "",
+    } 
     console.log(usuario)
     // Realizamos la solicitud POST al servidor
     url = 'http://pyban.pythonanywhere.com/usuario'
@@ -36,7 +35,8 @@ document.getElementById('register').addEventListener('submit', function (event) 
             }
         })
         .then(function (data) {
-            alert('El nuevo usuario se registró correctamente.')
+            alert('¡Su usuario se creó correctamente!')
+            window.location = "login.html"
         })
         .catch(function (error) {
             console.log('Error:', error)

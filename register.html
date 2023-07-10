@@ -17,22 +17,22 @@
         <div class="head">
             <a href="index.html"><img src="img/logo.png" alt="Inicio" class="head-logo"></a>
         </div>
-        <form action="/index.html">
+        <form id="register">
             <div class="inp">
                 <label for="mail">Correo electrónico</label> <br>
-                <input type="email" class="user" name="mail" required>
+                <input type="email" class="user" name="mail" id="email" required>
             </div>
             <div class="inp">
                 <label for="usuario">Usuario</label> <br>
-                <input type="text" class="user" name="usuario" required>
+                <input type="text" class="user" name="usuario" id="nombre" required>
             </div>
             <div class="inp">
                 <label for="contra">Contraseña</label> <br>
-                <input type="password" class="password" name="contra" required>
+                <input type="password" class="password" name="contra" id="clave" required>
             </div>
             <div class="inp">
                 <label for="nas">Fecha de nacimeinto</label> <br>
-                <input type="date" class="user" name="nas" required>
+                <input type="date" class="user" name="nas" id="fnas" required>
             </div>
             <div class="send">
                 <input type="submit" value="Crear Cuenta" id="button-registrar">
@@ -48,5 +48,6 @@
 
     <footer id="footer"></footer>
     <script src="script/register.js"></script>
+    <script src="post.js"></script>
 </body>
 </html>

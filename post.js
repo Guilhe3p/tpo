@@ -95,6 +95,7 @@ if (aside_doc  != null){ aside_doc.innerHTML = asideBody }
 if (localStorage.getItem("usuario") != undefined){
     let datos = JSON.parse(localStorage.getItem("usuario"))
 
+    if(datos.imagen==""){datos.imagen="sin_foto.jpeg"}
     logs = document.querySelector(".logs")
     logs.style.display = "none"
     usuarioRef = document.querySelector(".usua")
