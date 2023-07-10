@@ -26,14 +26,17 @@ main{
     border-radius: 10px;
     margin-bottom: 20px;
 }
-#img_perfil h4{
+#foto-perfil{
+    width: 100%;
+}
+#agregar-foto h4{
     position: absolute;
     top: 60%;
     width: 320px;
     text-align: center;
     color: lightsteelblue;
 } #img_perfil:hover h4{color: darkblue;}
-#img_perfil img{
+#agregar-foto img{
     margin-top: 160px;
     margin-left: 160px;
     transform: translate(-50%,-70%);
@@ -41,7 +44,7 @@ main{
     filter: invert(1);
     filter: invert(0.5) sepia(3) saturate(1) hue-rotate(175deg)
 } 
-#img_perfil:hover img{
+#img_perfil:hover #agregar-foto img{
     filter: invert(1);
     filter: invert(0.3) sepia(20    ) saturate(2) hue-rotate(175deg);
 }
