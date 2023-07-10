@@ -1,17 +1,17 @@
-var USUARIOS = new Array()
+// var USUARIOS = new Array()
 
-class Usuario {
-    constructor(id,nombre,contra,foto){
-        this.id = id
-        this.nombre = nombre
-        this.contra = contra
-        this.foto = foto
-        USUARIOS.push(this)
-    }
-}
+// class Usuario {
+//     constructor(id,nombre,contra,foto){
+//         this.id = id
+//         this.nombre = nombre
+//         this.contra = contra
+//         this.foto = foto
+//         USUARIOS.push(this)
+//     }
+// }
 
-ur1 = new Usuario(1,"JuanPablo","Codo","../img/profe.jpg")
-ur2 = new Usuario(2,"guilhe","123","../img/sin_foto.jpeg")
+// ur1 = new Usuario(1,"JuanPablo","Codo","../img/profe.jpg")
+// ur2 = new Usuario(2,"guilhe","123","../img/sin_foto.jpeg")
 
 
 function validarUsuario(){

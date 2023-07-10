@@ -17,7 +17,7 @@
             <!-- <div class="head">
                 <a href="index.html"><img src="img/logo.png" alt="Inicio" class="head-logo"></a>
             </div> -->
-            <form >
+            <form id="formulario">
                 <div class="inp">
                     <label for="usuario">Usuario:</label> <br>
                     <input type="text" id="user" name="usuario" required>
@@ -34,7 +34,7 @@
                 <div class="send">
                     <label for="recordar">Recordar mis datos</label>
                     <input type="checkbox"> <br>
-                    <input type="button" value="Acceder" id="button-acceder" onclick="validarUsuario()">
+                    <input type="submit" value="Acceder" id="button-acceder">
                     <div>
                         <a href="">Olvidé mi usuario</a> <span>|</span> <a href="">Olvidé mi contraseña</a>
                     </div>
@@ -50,7 +50,7 @@
     <footer id="footer"></footer>
 
     <script src="/post.js"></script>
-    <script src="script/usuarios.js"></script>
+    <script src="script/login.js"></script>
 
 </body>
 </html>

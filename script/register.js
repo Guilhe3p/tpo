@@ -1,26 +1,45 @@
-//archivo en proceso para implementación en bases de datos
 
-// class Usuario{
-//     constructor(nombre,clave,correo,fecha_nas){
-//         this.NAME = nombre;
-//         this.PASWORD = clave;
-//         this.EMAIL = correo;
-//         this.BIRTH = fecha_nas;
-//     }
-// }
+// Capturamos el evento de envío del formulario
+document.getElementById('register').addEventListener('submit', function (event) {
+    event.preventDefault() // Evitamos que se recargue la página
 
-// function cargarUsuarios(){
-//     const solicitudURL = "usuarios.json"
-//     const solicitud = new XMLHttpRequest()
-    
-//     solicitud.open("GET",solicitudURL)
-//     solicitud.responseType = "json"
-//     solicitud.send()
+    // Obtenemos los valores del formulario
+    var email = document.getElementById('email').value
+    var nombre = document.getElementById('nombre').value
+    var clave = document.getElementById('clave').value
+    var f_nas = document.getElementById('fnas').value
+    var imagen = document.getElementById('imagen').value
 
-//     solicitud.onload = function(){
-//         console.log("llego a la solicitud")
-        
-//     }
-// }
-
-// console.log(cargarUsuarios())
+    // Creamos un objeto con los datos del juego
+    var usuario = {
+        'correo': email,
+        'nombre': nombre,
+        'clave': clave,
+        'f_nas': f_nas,
+        'imagen': imagen,
+    }
+    console.log(usuario)
+    // Realizamos la solicitud POST al servidor
+    url = 'http://pyban.pythonanywhere.com/usuario'
+    fetch(url, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(usuario)
+    })
+        .then(function (response) {
+            if (response.ok) {
+                return response.json() // Parseamos la respuesta JSON
+            } else {
+                throw new Error('Error al registrar el nuevo usuario.')
+            }
+        })
+        .then(function (data) {
+            alert('El nuevo usuario se registró correctamente.')
+        })
+        .catch(function (error) {
+            console.log('Error:', error)
+            alert('Error al registrar usuario.')
+        })
+})

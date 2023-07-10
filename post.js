@@ -92,17 +92,16 @@ if (aside_doc  != null){ aside_doc.innerHTML = asideBody }
 
 
 //funciones para usuario
-nomus = sessionStorage.getItem("Usuario")
-if (sessionStorage.getItem("Usuario") != undefined){
-    let fotous = sessionStorage.getItem("Foto")
+if (localStorage.getItem("usuario") != undefined){
+    let datos = JSON.parse(localStorage.getItem("usuario"))
 
     logs = document.querySelector(".logs")
     logs.style.display = "none"
     usuarioRef = document.querySelector(".usua")
     usuarioRef.innerHTML += `
     <div class="perfil_data">
-        <img src="../img/${fotous}" alt="">
-        <h2>${nomus}</h2>
+        <img src="../img/${datos.imagen}" alt="">
+        <h2>${datos.nombre}</h2>
     </div>
     <div class="usua_options">
         <a href="perfil.html"><h3>Mi Perfil</h3></a>
@@ -112,7 +111,7 @@ if (sessionStorage.getItem("Usuario") != undefined){
 }
 
 function cerrarSesion(){
-    sessionStorage.removeItem("Usuario")
+    localStorage.removeItem("usuario")
     window.location.href = "index.html"
 }
 
