@@ -5,33 +5,32 @@ let arrayJuegos = JSON.parse(sessionStorage.getItem("juegos"))
 let body = ''
 
 const urlSearchParams = new URLSearchParams(window.location.search);
-const codigo = parseInt(urlSearchParams.get("id"));
+const id = urlSearchParams.get("id");
+console.log("El id es:", id);
 
-console.log("El id es:", codigo);
-console.log(arrayJuegos.length);
 
 for (let i = 0; i < arrayJuegos.length; i++) {
-    if (codigo === arrayJuegos[i].codigo) 
+    if (id === arrayJuegos[i].id) {
         body += `<div class="resenia">
                             <div id="imagen">
-                                <img src="img/catalogo/${arrayJuegos[i].imagen}" alt=${arrayJuegos[i].nombre} />
+                                <img src="${arrayJuegos[i].image_url}" alt=${arrayJuegos[i].name} />
                             </div>
                             <div id="datos_basicos">
                                     <h1>
-                                    ${arrayJuegos[i].nombre}
+                                    ${arrayJuegos[i].name}
                                     </h1>
                                     <p>
-                                    <b>Tiempo de Juego:  </b>  ${arrayJuegos[i].tiempo} minutos
+                                    <b>Tiempo de Juego:  </b>  ${arrayJuegos[i].playtime} minutos
                                     </p>
                                     <p>
-                                    <b>Cantidad de Jugadores:  </b>  ${arrayJuegos[i].jugadores} personas
+                                    <b>Cantidad de Jugadores:  </b>  ${arrayJuegos[i].players} personas
                                     </p>
                             </div>
                             <div id="descripcion">
-                                    <p><b>Descripción:  </b>  ${arrayJuegos[i].descripcion}</p>
+                                    <p><b>Descripción:  </b>  ${arrayJuegos[i].description}</p>
                             </div>
-                    </div>` 
-    
+                    </div>`
+    }
 }
 document.getElementById("list").innerHTML = body
 

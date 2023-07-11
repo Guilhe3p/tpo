@@ -19,7 +19,7 @@ document.getElementById('register').addEventListener('submit', function (event) 
     } 
     console.log(usuario)
     // Realizamos la solicitud POST al servidor
-    url = 'http://pyban.pythonanywhere.com/usuario'
+    url = '//pyban.pythonanywhere.com/usuario'
     fetch(url, {
         method: 'POST',
         headers: {

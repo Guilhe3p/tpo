@@ -26,7 +26,7 @@ document
         }
 
         // Realizamos la solicitud POST al servidor
-        url = 'http://pyban.pythonanywhere.com/login/' + email + '/' + clave
+        url = '//pyban.pythonanywhere.com/login/' + email + '/' + clave
         console.log(url);
         fetch(url, {
             method: "GET",
