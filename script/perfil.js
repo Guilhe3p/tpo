@@ -32,6 +32,27 @@ function CargarDatos(){
         let juegos = JSON.stringify(data)
         sessionStorage.setItem("puntuaciones", juegos)
         console.log(data);
+
+        const puntuaciones = document.getElementById("puntuados")
+        const DatosJuegos = JSON.parse(sessionStorage.getItem("juegos"))
+        for (let puntuado in data){
+
+            console.log("cargando datos de juego puntuado")
+            
+            for(let i = 0; i < DatosJuegos.length;i++){
+
+                if (data[puntuado].juego === DatosJuegos[i].codigo){
+                    console.log("juego encontrado en catalogo")
+                    puntuaciones.innerHTML += `
+                        <div class="juego-puntuado">
+                            <img src="//64ad39807c7bcc007c8afa87--tiny-mochi-864b31.netlify.app/${DatosJuegos[i].imagen}">
+                            <h1>${DatosJuegos[i].nombre}</h1>
+                            <img src="img/Dado${data[puntuado].puntaje}.png">
+                        </div>
+                    `
+                }
+            }
+        }
     }
 
     

@@ -79,10 +79,18 @@ main{
 }
 
 .juego-puntuado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    height: 100px;
+    /* height: 100px; */
     margin: 5px 0px;
     background-color: rgba(191,225,159,0.7);
+}
+
+.juego-puntuado img{
+    height: 100px;
+    margin: 10px;
 }
 
 #puntuar {
