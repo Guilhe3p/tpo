@@ -51,6 +51,10 @@ main{
 #img_perfil:hover{
     cursor: pointer;
 }
+#agregar-foto input{
+    width: 100%;
+    background-color: #1290cb;
+}
 
 .data-left .user-data{
     width: 97%;
@@ -127,10 +131,11 @@ main{
     text-align: center;
     padding: 10px 15px;
     font-size: medium;
-    border-radius: 8px;;
+    border-radius: 8px;
 }
 
 #formulario button:hover {
+    cursor: pointer;
     background-color: white;
     color: #1290cb;
 }

@@ -35,6 +35,16 @@ function CargarDatos(){
 
         const puntuaciones = document.getElementById("puntuados")
         const DatosJuegos = JSON.parse(sessionStorage.getItem("juegos"))
+
+        if (data.length==0){
+            puntuaciones.innerHTML += `
+                        <div class="juego-puntuado">
+
+                            <h1>Parece que no has puntuado ningun juego aún!!</h1>
+
+                        </div>
+                    `
+        }
         for (let puntuado in data){
 
             console.log("cargando datos de juego puntuado")

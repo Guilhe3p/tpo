@@ -1,4 +1,4 @@
-url = '//pyban.pythonanywhere.com/juegos' 
+url = 'http://pyban.pythonanywhere.com/juegos' 
 fetch(url, {
     method: 'GET',
     headers: {
@@ -19,7 +19,19 @@ const mostrarData = (data) => {
     const id = urlSearchParams.get("id");
     console.log(juegos.length)
 
+    const puntuados = JSON.parse(sessionStorage.getItem("puntuaciones"))
+
     for (let i = 0; i < juegos.length; i++) {
+        // let esta_puntuado = false
+        // for(let j=0;j<puntuados.length;j++){
+        //     if(puntuados[j].juego === juegos[i].codigo){
+        //         esta_puntuado = true
+        //         console.log("el juego",puntuados[j].juego,"esta puntuado")
+        //     }
+        // }
+        // if (esta_puntuado==false){
+        //     opciones += `<option value=${juegos[i].codigo}>${juegos[i].nombre}</option>`
+        // }
         opciones += `<option value=${juegos[i].codigo}>${juegos[i].nombre}</option>`
     }
     document.getElementById("juegos").innerHTML = opciones
@@ -45,11 +57,12 @@ document.getElementById('formulario').addEventListener('submit', function (event
     console.log(codigo, puntajes)
     // Creamos un objeto con los datos del juego
     var puntos = {
+        'codigo_usuario': JSON.parse(localStorage.getItem("usuario")).codigo,
         'codigo_juego': codigo,
-        'puntajes': puntajes,
+        'puntaje': puntajes,
     }
     // Realizamos la solicitud POST al servidor
-    url = '//pyban.pythonanywhere.com/puntuar' 
+    url = 'http://pyban.pythonanywhere.com/puntuar' 
     console.log(url)
     fetch(url, {
         method: 'POST',
