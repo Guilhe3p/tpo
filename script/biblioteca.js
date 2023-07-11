@@ -12,7 +12,7 @@ for (let i = 0; i < arrayJuegos.length; i++) {
 
     body += `<div class="biblioteca">
         <a href="resenia_juego.html?id=${arrayJuegos[i].codigo}">
-        <img src="img/catalogo/${arrayJuegos[i].imagen}" alt="${arrayJuegos[i].nombre}" />
+        <img src="//64ad39807c7bcc007c8afa87--tiny-mochi-864b31.netlify.app/${arrayJuegos[i].imagen}" alt="${arrayJuegos[i].nombre}" />
         </a>
         <div class="titulo">
         <a href="resenia_juego.html?id=${arrayJuegos[i].codigo}">

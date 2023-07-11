@@ -14,7 +14,7 @@ for (let i = 0; i < arrayJuegos.length; i++) {
     if (codigo === arrayJuegos[i].codigo) 
         body += `<div class="resenia">
                             <div id="imagen">
-                                <img src="img/catalogo/${arrayJuegos[i].imagen}" alt=${arrayJuegos[i].nombre} />
+                                <img src="//64ad39807c7bcc007c8afa87--tiny-mochi-864b31.netlify.app//${arrayJuegos[i].imagen}" alt=${arrayJuegos[i].nombre} />
                             </div>
                             <div id="datos_basicos">
                                     <h1>
