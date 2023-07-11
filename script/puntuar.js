@@ -1,4 +1,4 @@
-url = 'http://pyban.pythonanywhere.com/juegos' 
+url = '//pyban.pythonanywhere.com/juegos' 
 fetch(url, {
     method: 'GET',
     headers: {
