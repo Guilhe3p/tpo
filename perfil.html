@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,13 @@
     <link rel="stylesheet" href="CSS/header2.css">
     <link rel="stylesheet" href="CSS/footer.css">
     <link rel="stylesheet" href="CSS/perfil.css">
-    <script>if (localStorage.getItem("usuario") == undefined){
-        window.location = "index.html"
-    }</script>
+    <!-- <link rel="stylesheet" href="css/estilos.css"> -->
+    <script>if (localStorage.getItem("usuario") == undefined) {
+            window.location = "index.html"
+        }</script>
     <title>Mi Perfil</title>
 </head>
+
 <body>
     <header id="header">
 
@@ -41,7 +44,9 @@
             </div>
         </div>
         <div class="main-data">
-            <h1>MI PERFIL <hr> </h1>
+            <h1>MI PERFIL
+                <hr>
+            </h1>
 
             <div id="puntuados-contenedor">
                 <h2>MIS JUEGOS PUNTUADOS</h2>
@@ -53,11 +58,68 @@
                     <div class="juego-puntuado"></div>
                 </div>
             </div>
-        </div>
+                <div id="puntuados-contenedor">
+                    <h2>PUNTUAR JUEGOS</h2>
+                    <div id="puntuar">
+                        <form id="formulario">
+                            <label for="juego">Elija un juego del catálogo</label>
+                            <select name="juegos" id="juegos">
+                            </select>
+                            <br>
+                            <label for="puntajes">Puntaje:</label>
+                            <div class="puntajes">
+                                <label class="puntaje">
+                                    <div class="radio-btns">
+                                        <img src="img/Dado1.png" />
+                                        <input type="radio" name="targetgroup">
+                                    </div>
+                                </label>
+                                <label class="puntaje">
+                                    <div class="radio-btns">
+                                        <img src="img/Dado2.png">
+                                        <input type="radio" name="targetgroup">
+                                    </div>
+                                </label>
+                                <label class="puntaje">
+                                    <div class="radio-btns">
+                                        <img src="img/Dado3.png">
+                                        <input type="radio" name="targetgroup">
+                                    </div>
+                                </label>
+                                <label class="puntaje">
+                                    <div class="radio-btns">
+                                        <img src="img/Dado4.png">
+                                        <input type="radio" name="targetgroup">
+                                    </div>
+                                </label>
+
+                                <label class="puntaje">
+                                    <div class="radio-btns">
+                                        <img src="img/Dado5.png">
+                                        <input type="radio" name="targetgroup">
+                                    </div>
+                                </label>
+
+                                <label class="puntaje">
+                                    <div class="radio-btns">
+                                        <img src="img/Dado6.png">
+                                        <input type="radio" name="targetgroup">
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="button">
+                                <button type="submit">Puntuar juego</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            
     </main>
 
     <footer id="footer"></footer>
     <script src="script/perfil.js"></script>
     <script src="post.js"></script>
+    <script src="script/puntuar.js"></script>
 </body>
+
 </html>

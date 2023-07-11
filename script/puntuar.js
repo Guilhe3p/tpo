@@ -1,4 +1,4 @@
-url = 'http://pyban.pythonanywhere.com/juegos' 
+url = '//pyban.pythonanywhere.com/juegos' 
 fetch(url, {
     method: 'GET',
     headers: {
@@ -49,7 +49,7 @@ document.getElementById('formulario').addEventListener('submit', function (event
         'puntajes': puntajes,
     }
     // Realizamos la solicitud POST al servidor
-    url = 'http://pyban.pythonanywhere.com/puntuar' 
+    url = '//pyban.pythonanywhere.com/puntuar' 
     console.log(url)
     fetch(url, {
         method: 'POST',
